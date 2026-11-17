@@ -105,7 +105,7 @@
  "bundleMerkleRoot": null,
  "checkRuns": {
   "byApp": {},
-  "commitsScanned": 103,
+  "commitsScanned": 106,
   "count": 0,
   "explained": 0,
   "goLiveReady": true,
@@ -116,34 +116,23 @@
   "unpaired": []
  },
  "configDrift": [],
- "exceptions": [
-  {
-   "control": "CC-06",
-   "id": "EXC-2026-11-17-01",
-   "item": "report:2026-11-17T04:47:51Z",
-   "kind": "previous-report-unverified",
-   "labels": [
-    "app-key-exposed-not-rotated"
-   ],
-   "reason": "no verified reconciliation-report for 2026-11-17T04:47:51Z has digest sha256:70a7656ee13bcce3267ac5cf0e464f1ff984b5c21935be1a6ca463337cf531f2 (0 verified for that subject)"
-  }
- ],
+ "exceptions": [],
  "forgeryAttempts": [
   "sha256:24ed34528967ff052ab55d9a615751c782f00854355f02cd4a01c586c7186145",
   "sha256:722e303b8e4d1e4c331156fbf6ccf1de7a3da678bde419dfe3a14b30ce7eb6b7",
-  "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca",
-  "sha256:a34e867e484c6298309af20953753d13a9c1f4040b2d785eabb8831b135c32b4"
+  "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca"
  ],
  "goLive": {
-  "at": null,
-  "mainSha": null
+  "anchorPr": 45,
+  "at": "2026-11-17T05:05:30Z",
+  "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
  },
  "highWater": {
   "lastCheckRunId": null,
-  "lastPrNumber": 44,
-  "mainSha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d"
+  "lastPrNumber": 45,
+  "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
  },
- "id": "2026-11-17T04:55:20Z",
+ "id": "2026-11-17T05:07:51Z",
  "knownExceptions": [
   {
    "kind": "known-exception",
@@ -162,30 +151,30 @@
   "P5 rulesets, ruleset history and rule suites (owner token gets 403; unverified)",
   "P8 checkRunId-to-check-run resolution for every verified predicate"
  ],
- "observedAt": "2026-11-17T04:56:30Z",
- "openExceptions": 1,
- "outcome": "exceptions",
+ "observedAt": "2026-11-17T05:08:48Z",
+ "openExceptions": 0,
+ "outcome": "clean",
  "period": {
-  "from": "2026-11-17T04:47:51Z",
-  "to": "2026-11-17T04:55:20Z"
+  "from": "2026-11-17T04:55:20Z",
+  "to": "2026-11-17T05:07:51Z"
  },
- "policyDigest": "sha256:8f79d882a092fc4fabc78cd0650ab6e4c287c507490f1d64fbba6019f96f1191",
+ "policyDigest": "sha256:6cdb653cefc5b1bbc253c3dda75384e0920209e198ef60802d10294afeb38f0e",
  "populations": {
   "P1": {
-   "count": 46,
-   "query": "git rev-list --first-parent ec58b9e0cb32b171d14e5a5ad5ada1836650c87d",
-   "reachableCommits": 97
+   "count": 47,
+   "query": "git rev-list --first-parent 3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2",
+   "reachableCommits": 100
   },
   "P2": {
-   "count": 44,
+   "count": 45,
    "mergedNotOnFirstParent": [],
-   "mergesOnMain": 44
+   "mergesOnMain": 45
   },
   "P5": {
    "count": 9
   },
   "P8": {
-   "commitsScanned": 103,
+   "commitsScanned": 106,
    "count": 0,
    "explained": 0,
    "paired": 0,
@@ -193,8 +182,8 @@
    "unexplainedUnpaired": 0
   }
  },
- "previousReport": "sha256:70a7656ee13bcce3267ac5cf0e464f1ff984b5c21935be1a6ca463337cf531f2",
- "reconcilerCodeSha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d",
+ "previousReport": "sha256:a80dfcc5dc6c80c5a1e43252ba013611d499c81c4e41e5c0202d2bbb815e074d",
+ "reconcilerCodeSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2",
  "repo": "factory-ryan-lauderback/sox-sdlc-sandbox",
  "required_steps": [
   "merge-record"
@@ -1164,6 +1153,28 @@
    "pr": 44,
    "result": "bootstrap",
    "sha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d"
+  },
+  {
+   "commits": [
+    "d234846737690bd4ace9ad0efe7a4edd8da59de3",
+    "71c5982159b854a8326b3bcffd2411499fea69ac"
+   ],
+   "committedAt": "2026-11-16T21:05:29-08:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T05:05:30Z",
+   "parents": [
+    "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d",
+    "d234846737690bd4ace9ad0efe7a4edd8da59de3"
+   ],
+   "pr": 45,
+   "result": "bootstrap",
+   "sha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
   }
  ],
  "schema": "sox/reconciliation-report/v1",
