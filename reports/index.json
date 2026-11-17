@@ -13,5 +13,20 @@
    "mainSha": "ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419"
   },
   "openExceptions": 0
+ },
+ {
+  "id": "2026-11-17T04:55:20Z",
+  "digest": "sha256:a80dfcc5dc6c80c5a1e43252ba013611d499c81c4e41e5c0202d2bbb815e074d",
+  "prev_digest": "sha256:70a7656ee13bcce3267ac5cf0e464f1ff984b5c21935be1a6ca463337cf531f2",
+  "period_start": "2026-11-17T04:47:51Z",
+  "period_end": "2026-11-17T04:55:20Z",
+  "path": "reports/2026/11/17/report-20261117T045520Z.json",
+  "attestationBundle": "sha256:69a9f78a1eec4fefd67b846f5730d66a71f7be2d89cf4bbf6fa02aa3e58255ae",
+  "highWater": {
+   "lastCheckRunId": null,
+   "lastPrNumber": 44,
+   "mainSha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d"
+  },
+  "openExceptions": 1
  }
 ]
