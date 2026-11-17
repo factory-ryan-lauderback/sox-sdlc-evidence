@@ -1,4 +1,9 @@
 {
+ "actor": {
+  "appId": 5702166,
+  "login": "acme-sox-reconciler[bot]",
+  "type": "github_app"
+ },
  "appKeys": {
   "at": "2026-11-17T04:08:35Z",
   "keys": [
@@ -100,7 +105,7 @@
  "bundleMerkleRoot": null,
  "checkRuns": {
   "byApp": {},
-  "commitsScanned": 101,
+  "commitsScanned": 103,
   "count": 0,
   "explained": 0,
   "goLiveReady": true,
@@ -111,11 +116,23 @@
   "unpaired": []
  },
  "configDrift": [],
- "exceptions": [],
+ "exceptions": [
+  {
+   "control": "CC-06",
+   "id": "EXC-2026-11-17-01",
+   "item": "report:2026-11-17T04:47:51Z",
+   "kind": "previous-report-unverified",
+   "labels": [
+    "app-key-exposed-not-rotated"
+   ],
+   "reason": "no verified reconciliation-report for 2026-11-17T04:47:51Z has digest sha256:70a7656ee13bcce3267ac5cf0e464f1ff984b5c21935be1a6ca463337cf531f2 (0 verified for that subject)"
+  }
+ ],
  "forgeryAttempts": [
   "sha256:24ed34528967ff052ab55d9a615751c782f00854355f02cd4a01c586c7186145",
   "sha256:722e303b8e4d1e4c331156fbf6ccf1de7a3da678bde419dfe3a14b30ce7eb6b7",
-  "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca"
+  "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca",
+  "sha256:a34e867e484c6298309af20953753d13a9c1f4040b2d785eabb8831b135c32b4"
  ],
  "goLive": {
   "at": null,
@@ -123,10 +140,10 @@
  },
  "highWater": {
   "lastCheckRunId": null,
-  "lastPrNumber": 43,
-  "mainSha": "ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419"
+  "lastPrNumber": 44,
+  "mainSha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d"
  },
- "id": "2026-11-17T04:47:51Z",
+ "id": "2026-11-17T04:55:20Z",
  "knownExceptions": [
   {
    "kind": "known-exception",
@@ -145,28 +162,30 @@
   "P5 rulesets, ruleset history and rule suites (owner token gets 403; unverified)",
   "P8 checkRunId-to-check-run resolution for every verified predicate"
  ],
- "openExceptions": 0,
+ "observedAt": "2026-11-17T04:56:30Z",
+ "openExceptions": 1,
+ "outcome": "exceptions",
  "period": {
-  "from": "2026-11-10T19:30:18Z",
-  "to": "2026-11-17T04:47:51Z"
+  "from": "2026-11-17T04:47:51Z",
+  "to": "2026-11-17T04:55:20Z"
  },
  "policyDigest": "sha256:8f79d882a092fc4fabc78cd0650ab6e4c287c507490f1d64fbba6019f96f1191",
  "populations": {
   "P1": {
-   "count": 45,
-   "query": "git rev-list --first-parent ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419",
-   "reachableCommits": 95
+   "count": 46,
+   "query": "git rev-list --first-parent ec58b9e0cb32b171d14e5a5ad5ada1836650c87d",
+   "reachableCommits": 97
   },
   "P2": {
-   "count": 43,
+   "count": 44,
    "mergedNotOnFirstParent": [],
-   "mergesOnMain": 43
+   "mergesOnMain": 44
   },
   "P5": {
    "count": 9
   },
   "P8": {
-   "commitsScanned": 101,
+   "commitsScanned": 103,
    "count": 0,
    "explained": 0,
    "paired": 0,
@@ -174,8 +193,9 @@
    "unexplainedUnpaired": 0
   }
  },
- "previousReport": null,
- "reconcilerCodeSha": "ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419",
+ "previousReport": "sha256:70a7656ee13bcce3267ac5cf0e464f1ff984b5c21935be1a6ca463337cf531f2",
+ "reconcilerCodeSha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d",
+ "repo": "factory-ryan-lauderback/sox-sdlc-sandbox",
  "required_steps": [
   "merge-record"
  ],
@@ -1123,7 +1143,29 @@
    "pr": 43,
    "result": "bootstrap",
    "sha": "ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419"
+  },
+  {
+   "commits": [
+    "5932714476d6e39241edc4ce6c62c110a14ebaeb"
+   ],
+   "committedAt": "2026-11-16T20:55:04-08:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:55:05Z",
+   "parents": [
+    "ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419",
+    "5932714476d6e39241edc4ce6c62c110a14ebaeb"
+   ],
+   "pr": 44,
+   "result": "bootstrap",
+   "sha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d"
   }
  ],
- "schema": "sox/reconciliation-report/v1"
+ "schema": "sox/reconciliation-report/v1",
+ "step": "CC-06"
 }
