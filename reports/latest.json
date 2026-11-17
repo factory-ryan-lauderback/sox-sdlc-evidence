@@ -5,7 +5,7 @@
   "type": "github_app"
  },
  "appKeys": {
-  "at": "2026-11-17T05:30:31Z",
+  "at": "2026-11-17T05:41:25Z",
   "keys": [
    {
     "appId": 5702160,
@@ -98,21 +98,21 @@
     "role": "techlead"
    }
   ],
-  "runId": "44024545043",
+  "runId": "44025813430",
   "source": "app-inventory artifact"
  },
  "bundleMerkleLeaves": 0,
  "bundleMerkleRoot": null,
  "checkRuns": {
   "byApp": {
-   "gate": 3,
-   "review": 1
+   "gate": 6,
+   "review": 2
   },
-  "commitsScanned": 114,
-  "count": 4,
+  "commitsScanned": 116,
+  "count": 8,
   "explained": 0,
   "goLiveReady": true,
-  "lastCheckRunId": 133841889558,
+  "lastCheckRunId": 133845981689,
   "paired": 0,
   "success": 0,
   "unexplainedUnpaired": 0,
@@ -131,11 +131,11 @@
   "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
  },
  "highWater": {
-  "lastCheckRunId": 133841889558,
+  "lastCheckRunId": 133845981689,
   "lastPrNumber": 45,
   "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
  },
- "id": "2026-11-17T05:30:40Z",
+ "id": "2026-11-17T05:41:32Z",
  "knownExceptions": [
   {
    "kind": "known-exception",
@@ -154,12 +154,12 @@
   "P5 rulesets, ruleset history and rule suites (owner token gets 403; unverified)",
   "P8 checkRunId-to-check-run resolution for every verified predicate"
  ],
- "observedAt": "2026-11-17T05:31:40Z",
+ "observedAt": "2026-11-17T05:42:30Z",
  "openExceptions": 0,
  "outcome": "clean",
  "period": {
-  "from": "2026-11-17T05:07:51Z",
-  "to": "2026-11-17T05:30:40Z"
+  "from": "2026-11-17T05:30:40Z",
+  "to": "2026-11-17T05:41:32Z"
  },
  "policyDigest": "sha256:6cdb653cefc5b1bbc253c3dda75384e0920209e198ef60802d10294afeb38f0e",
  "populations": {
@@ -177,15 +177,15 @@
    "count": 9
   },
   "P8": {
-   "commitsScanned": 114,
-   "count": 4,
+   "commitsScanned": 116,
+   "count": 8,
    "explained": 0,
    "paired": 0,
    "success": 0,
    "unexplainedUnpaired": 0
   }
  },
- "previousReport": "sha256:b48bef294549643390394c6e654bd5c4260fcc2614cb77e0d6bcdefd716f139d",
+ "previousReport": "sha256:50a06e17a91864357de01c26a3fcffa529907182b3fb24f2c9a61c5119b9f0fa",
  "reconcilerCodeSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2",
  "repo": "factory-ryan-lauderback/sox-sdlc-sandbox",
  "required_steps": [
