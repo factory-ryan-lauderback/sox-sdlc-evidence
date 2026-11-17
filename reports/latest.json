@@ -5,7 +5,7 @@
   "type": "github_app"
  },
  "appKeys": {
-  "at": "2026-11-17T05:41:25Z",
+  "at": "2026-11-17T22:06:26Z",
   "keys": [
    {
     "appId": 5702160,
@@ -98,32 +98,188 @@
     "role": "techlead"
    }
   ],
-  "runId": "44025813430",
+  "runId": "44186611573",
   "source": "app-inventory artifact"
  },
- "bundleMerkleLeaves": 0,
- "bundleMerkleRoot": null,
+ "bundleMerkleLeaves": 38,
+ "bundleMerkleRoot": "sha256:70fa12c77263a4fedee4d873f4b865321c24488d4918e6ce4f5a3f9d9dffec3a",
+ "bypassExceptions": [
+  {
+   "approvedAt": "2026-11-17",
+   "approvedBy": "factory-ryan-lauderback",
+   "label": "bypass-exception-1",
+   "mergeCommitSha": "fc4dd5de7690d82244f835aaed785add336d23a4",
+   "onMain": true,
+   "pr": 58,
+   "reason": "PM/TL context hidden-files fix; no control-change path yet"
+  },
+  {
+   "approvedAt": "2026-11-17",
+   "approvedBy": "factory-ryan-lauderback",
+   "label": "bypass-exception-2",
+   "mergeCommitSha": "0964c24e0f0218626e819e6f8d328b5d13f3b830",
+   "onMain": true,
+   "pr": 60,
+   "reason": "check-run ids exceed 9 digits"
+  },
+  {
+   "approvedAt": "2026-11-17",
+   "approvedBy": "factory-ryan-lauderback",
+   "label": "bypass-exception-3",
+   "mergeCommitSha": "515187a1ceba42dae732250659f175338c03204e",
+   "onMain": true,
+   "pr": 62,
+   "reason": "FRQ-13 dry-run contract fixes: manifest story objects, review author id, qa-result subject, unpaired agent runs"
+  }
+ ],
  "checkRuns": {
   "byApp": {
-   "gate": 6,
-   "review": 2
+   "gate": 98,
+   "qa": 6,
+   "review": 22
   },
-  "commitsScanned": 116,
-  "count": 8,
+  "commitsScanned": 147,
+  "count": 126,
   "explained": 0,
-  "goLiveReady": true,
-  "lastCheckRunId": 133845981689,
-  "paired": 0,
-  "success": 0,
-  "unexplainedUnpaired": 0,
-  "unpaired": []
+  "goLiveReady": false,
+  "lastCheckRunId": 134392460830,
+  "paired": 22,
+  "success": 23,
+  "unexplainedUnpaired": 1,
+  "unpaired": [
+   {
+    "app": "qa",
+    "checkRunId": 134141442425,
+    "exception": "EXC-2026-11-17-10",
+    "externalId": "44112362356",
+    "headSha": "37d7eb794fc4249e0a36e24545fc75cf25f2085d",
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "name": "sox/qa-agent",
+    "reason": "no verified qa-result from run 44112362356 with checkRunId 134141442425 for head 37d7eb794fc4",
+    "startedAt": "2026-11-17T15:16:42Z",
+    "url": "https://github.com/factory-ryan-lauderback/sox-sdlc-sandbox/runs/134141442425"
+   }
+  ]
  },
  "configDrift": [],
- "exceptions": [],
+ "exceptions": [
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-01",
+   "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
+   "kind": "bypass-exception",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-1"
+   ],
+   "reason": "PR #58 merged under a recorded bypass of main-protection, approved by factory-ryan-lauderback on 2026-11-17: PM/TL context hidden-files fix; no control-change path yet"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-02",
+   "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
+   "kind": "merge-record-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-1"
+   ],
+   "reason": "merge-record outcome 'fail', treeMatch True, checksPaired False"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-03",
+   "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
+   "kind": "gate-reperformance-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-1"
+   ],
+   "reason": "independent gate re-run as of merge fails ['F5.topology']"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-04",
+   "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
+   "kind": "bypass-exception",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-2"
+   ],
+   "reason": "PR #60 merged under a recorded bypass of main-protection, approved by factory-ryan-lauderback on 2026-11-17: check-run ids exceed 9 digits"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-05",
+   "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
+   "kind": "merge-record-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-2"
+   ],
+   "reason": "merge-record outcome 'fail', treeMatch True, checksPaired False"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-06",
+   "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
+   "kind": "gate-reperformance-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-2"
+   ],
+   "reason": "independent gate re-run as of merge fails ['F5.topology']"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-07",
+   "item": "commit:515187a1ceba42dae732250659f175338c03204e",
+   "kind": "bypass-exception",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-3"
+   ],
+   "reason": "PR #62 merged under a recorded bypass of main-protection, approved by factory-ryan-lauderback on 2026-11-17: FRQ-13 dry-run contract fixes: manifest story objects, review author id, qa-result subject, unpaired agent runs"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-08",
+   "item": "commit:515187a1ceba42dae732250659f175338c03204e",
+   "kind": "merge-record-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-3"
+   ],
+   "reason": "merge-record outcome 'fail', treeMatch True, checksPaired False"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-17-09",
+   "item": "commit:515187a1ceba42dae732250659f175338c03204e",
+   "kind": "gate-reperformance-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-3"
+   ],
+   "reason": "independent gate re-run as of merge fails ['F5.topology']"
+  },
+  {
+   "control": "CC-02",
+   "id": "EXC-2026-11-17-10",
+   "item": "check-run:134141442425",
+   "kind": "check-without-evidence",
+   "labels": [
+    "app-key-exposed-not-rotated"
+   ],
+   "reason": "no verified qa-result from run 44112362356 with checkRunId 134141442425 for head 37d7eb794fc4"
+  }
+ ],
  "forgeryAttempts": [
   "sha256:24ed34528967ff052ab55d9a615751c782f00854355f02cd4a01c586c7186145",
   "sha256:722e303b8e4d1e4c331156fbf6ccf1de7a3da678bde419dfe3a14b30ce7eb6b7",
-  "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca"
+  "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca",
+  "sha256:adc27b7c154c6aa19be995322b2a790758faaa72317f680d4864b577f5279396"
  ],
  "goLive": {
   "anchorPr": 45,
@@ -131,11 +287,11 @@
   "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
  },
  "highWater": {
-  "lastCheckRunId": 133845981689,
-  "lastPrNumber": 45,
-  "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
+  "lastCheckRunId": 134392460830,
+  "lastPrNumber": 62,
+  "mainSha": "96f212b0cc9278b25edc5010184d6cae666dcdd6"
  },
- "id": "2026-11-17T05:41:32Z",
+ "id": "2026-11-17T22:10:40Z",
  "knownExceptions": [
   {
    "kind": "known-exception",
@@ -144,6 +300,22 @@
   {
    "kind": "known-exception",
    "label": "bootstrap-pre-go-live"
+  },
+  {
+   "kind": "known-exception",
+   "label": "bypass-exception-1"
+  },
+  {
+   "kind": "known-exception",
+   "label": "bypass-exception-2"
+  },
+  {
+   "kind": "known-exception",
+   "label": "bypass-exception-3"
+  },
+  {
+   "kind": "known-exception",
+   "label": "sod-shortcut-owner-approver"
   }
  ],
  "notImplemented": [
@@ -154,39 +326,40 @@
   "P5 rulesets, ruleset history and rule suites (owner token gets 403; unverified)",
   "P8 checkRunId-to-check-run resolution for every verified predicate"
  ],
- "observedAt": "2026-11-17T05:42:30Z",
- "openExceptions": 0,
- "outcome": "clean",
+ "observedAt": "2026-11-17T22:17:52Z",
+ "openExceptions": 10,
+ "outcome": "exceptions",
  "period": {
-  "from": "2026-11-17T05:30:40Z",
-  "to": "2026-11-17T05:41:32Z"
+  "from": "2026-11-17T05:41:32Z",
+  "to": "2026-11-17T22:10:40Z"
  },
- "policyDigest": "sha256:6cdb653cefc5b1bbc253c3dda75384e0920209e198ef60802d10294afeb38f0e",
+ "policyDigest": "sha256:63c43f9178cd97c41fb67a55413db9d3694ac019730c00832c18dacc67be8693",
  "populations": {
   "P1": {
-   "count": 47,
-   "query": "git rev-list --first-parent 3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2",
-   "reachableCommits": 100
+   "count": 51,
+   "query": "git rev-list --first-parent 96f212b0cc9278b25edc5010184d6cae666dcdd6",
+   "reachableCommits": 120
   },
   "P2": {
-   "count": 45,
+   "bypassMerges": 3,
+   "count": 49,
    "mergedNotOnFirstParent": [],
-   "mergesOnMain": 45
+   "mergesOnMain": 49
   },
   "P5": {
    "count": 9
   },
   "P8": {
-   "commitsScanned": 116,
-   "count": 8,
+   "commitsScanned": 147,
+   "count": 126,
    "explained": 0,
-   "paired": 0,
-   "success": 0,
-   "unexplainedUnpaired": 0
+   "paired": 22,
+   "success": 23,
+   "unexplainedUnpaired": 1
   }
  },
- "previousReport": "sha256:50a06e17a91864357de01c26a3fcffa529907182b3fb24f2c9a61c5119b9f0fa",
- "reconcilerCodeSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2",
+ "previousReport": "sha256:c626f68125f373baaa49b9066fe8a8d1622f22ceb0dd44a23ede476a37c258e1",
+ "reconcilerCodeSha": "96f212b0cc9278b25edc5010184d6cae666dcdd6",
  "repo": "factory-ryan-lauderback/sox-sdlc-sandbox",
  "required_steps": [
   "merge-record"
@@ -928,7 +1101,9 @@
     "b3d4652b1dc088d7779f5bb942599eedcde4917f"
    ],
    "committedAt": "2026-11-16T20:20:28-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:aa3d85596570db6c58f296c8d0d5061e4e972af5239edaf33516d1da1dc98542"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -941,7 +1116,7 @@
     "b3d4652b1dc088d7779f5bb942599eedcde4917f"
    ],
    "pr": 35,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "c226790c9131730e00628d7b6d2b0b17f85bd7f7"
   },
   {
@@ -949,7 +1124,9 @@
     "c29a955ec4e79198781bcbc8d9276776139849bd"
    ],
    "committedAt": "2026-11-16T20:21:43-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:14bb1c731fd37280892101c97161c562e65e3b391e111678bcfa4a63abab0c51"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -962,7 +1139,7 @@
     "c29a955ec4e79198781bcbc8d9276776139849bd"
    ],
    "pr": 36,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "b5c525805b3eae4c53548dd33ba1953c704c3cc7"
   },
   {
@@ -970,7 +1147,9 @@
     "1517c1c8c1a06f877c699c6036106b476894a551"
    ],
    "committedAt": "2026-11-16T20:23:28-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:cabe19560ecc2f74ec0d58996faba1cc036c3980e6337d1006da626f693a0166"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -983,7 +1162,7 @@
     "1517c1c8c1a06f877c699c6036106b476894a551"
    ],
    "pr": 37,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "d0d20723bee23a852a4deb25523cea29c26a1359"
   },
   {
@@ -991,7 +1170,9 @@
     "7d3cff85215bb8d5217273e78d13e8841cfb3d26"
    ],
    "committedAt": "2026-11-16T20:23:46-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:3af1d73e7e2d0c6cf80eeaa0727bc2b4d9b1b7751016fe7df3f7c79ae74a1b29"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1004,7 +1185,7 @@
     "7d3cff85215bb8d5217273e78d13e8841cfb3d26"
    ],
    "pr": 38,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "5cca57524fb49a7acb837d5f833e61dd116bf2b2"
   },
   {
@@ -1012,7 +1193,9 @@
     "8674d0678279abf5738a5da1fbc722d9220b35a2"
    ],
    "committedAt": "2026-11-16T20:25:12-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:2ff4b6b036661038e524467588746b7b4a48f62e48274225697ff46c7927626d"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1025,7 +1208,7 @@
     "8674d0678279abf5738a5da1fbc722d9220b35a2"
    ],
    "pr": 39,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "210fbd7212ae2a85a185e56308e906d3ed8a01a8"
   },
   {
@@ -1033,7 +1216,9 @@
     "8faa65a2067725a47bddc88a8172480957f57740"
    ],
    "committedAt": "2026-11-16T20:28:28-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:d662159c657b56aa47b9d57a5d58ad7c5ced62549bb23c0179047ab9bc5aa7e2"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1046,7 +1231,7 @@
     "8faa65a2067725a47bddc88a8172480957f57740"
    ],
    "pr": 40,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "30173ad8e851b2c4a37a296fb83555cd7118d0b8"
   },
   {
@@ -1057,7 +1242,9 @@
     "2f83cdeb95d27c581250fcbd74e0d56506e21615"
    ],
    "committedAt": "2026-11-16T20:34:08-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:ed6829952aa85d86a1031b4d088faa9a8ec74febccc3f1587760017f05640db7"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1070,7 +1257,7 @@
     "7f8a2fed8f0b6f2b6362b09dd3be74483ef5c1f4"
    ],
    "pr": 32,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "c9b7f558d9debfb286bf58d51012e30f54cba54e"
   },
   {
@@ -1078,7 +1265,9 @@
     "f4f24b65736f75fbaa79463e4a94bdb6bc695f3b"
    ],
    "committedAt": "2026-11-16T20:36:26-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:bd81e1b617027703cd2d5e49c47a72e85e1671e08d7166a45bbe6005c7de1500"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1091,7 +1280,7 @@
     "f4f24b65736f75fbaa79463e4a94bdb6bc695f3b"
    ],
    "pr": 41,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "59e90b61f90f68bcfbafdce551ff6f69c28b82d1"
   },
   {
@@ -1099,7 +1288,9 @@
     "69949a0d02ee592837223a769f38675a7859ea09"
    ],
    "committedAt": "2026-11-16T20:38:39-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:19ad68365fc7a61b20fb5fdd056e1c525b16aeff8cd9054c79503a873c5c46c4"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1112,7 +1303,7 @@
     "69949a0d02ee592837223a769f38675a7859ea09"
    ],
    "pr": 42,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "08cbf2877fe07819ec4bb15e17a65c84035fef2b"
   },
   {
@@ -1120,7 +1311,9 @@
     "1d977de6fdaf1c56a31a9ba4130acdd561cceca0"
    ],
    "committedAt": "2026-11-16T20:47:30-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:751e9e09c28c0b6fa98a241782adb0d62a639e3b7e88edb52a1f01a368e792ab"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1133,7 +1326,7 @@
     "1d977de6fdaf1c56a31a9ba4130acdd561cceca0"
    ],
    "pr": 43,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419"
   },
   {
@@ -1141,7 +1334,9 @@
     "5932714476d6e39241edc4ce6c62c110a14ebaeb"
    ],
    "committedAt": "2026-11-16T20:55:04-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:87ea9c3ff557f28932776fe5d6e7f4632de1277aba8e0994d27462f4d1dc075a"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1154,7 +1349,7 @@
     "5932714476d6e39241edc4ce6c62c110a14ebaeb"
    ],
    "pr": 44,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d"
   },
   {
@@ -1163,7 +1358,9 @@
     "71c5982159b854a8326b3bcffd2411499fea69ac"
    ],
    "committedAt": "2026-11-16T21:05:29-08:00",
-   "evidence": {},
+   "evidence": {
+    "merge-record": "sha256:db1dfa14cddcb96d2210a0c6f620e53e569a5f5e0e3126d6fea4d78bad9e879c"
+   },
    "exception": "bootstrap-pre-go-live",
    "kind": "main-commit",
    "labels": [
@@ -1176,8 +1373,155 @@
     "d234846737690bd4ace9ad0efe7a4edd8da59de3"
    ],
    "pr": 45,
-   "result": "bootstrap",
+   "result": "pass",
    "sha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
+  },
+  {
+   "bypassException": {
+    "approvedAt": "2026-11-17",
+    "approvedBy": "factory-ryan-lauderback",
+    "label": "bypass-exception-1",
+    "pr": 58,
+    "reason": "PM/TL context hidden-files fix; no control-change path yet"
+   },
+   "commits": [
+    "163ca8d50aeb8674409de44149102cee4746632f",
+    "6363230405724d79dd96946084615999a84a9742",
+    "64de54f67e35ceb9a6acc0b65dfe2625f5a67b63"
+   ],
+   "committedAt": "2026-11-17T05:42:24-08:00",
+   "evidence": {
+    "merge-record": "sha256:44e095f15d917083dcc2623bb44800266be572b4a1dfaa0680b57b1454db7871"
+   },
+   "exception": "EXC-2026-11-17-01, EXC-2026-11-17-02, EXC-2026-11-17-03",
+   "gateAsOfMerge": {
+    "failed": [
+     "F5.topology"
+    ],
+    "result": "fail"
+   },
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-1"
+   ],
+   "mergedAt": "2026-11-17T13:42:24Z",
+   "parents": [
+    "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2",
+    "163ca8d50aeb8674409de44149102cee4746632f"
+   ],
+   "pr": 58,
+   "result": "fail",
+   "sha": "fc4dd5de7690d82244f835aaed785add336d23a4"
+  },
+  {
+   "bypassException": {
+    "approvedAt": "2026-11-17",
+    "approvedBy": "factory-ryan-lauderback",
+    "label": "bypass-exception-2",
+    "pr": 60,
+    "reason": "check-run ids exceed 9 digits"
+   },
+   "commits": [
+    "c390738d2342500a3433cc651911d65be3688378",
+    "e945c7a0d7a4b55f37f0357c9ef1d97205c6dab7",
+    "40a56805b0dc0edcc89e4692306ca1dc3ee4c589"
+   ],
+   "committedAt": "2026-11-17T07:14:13-08:00",
+   "evidence": {
+    "merge-record": "sha256:f360e5bac5abeadd8d2b0025bde4552775ea6ea4309775fd9b3ccd934939b7a5"
+   },
+   "exception": "EXC-2026-11-17-04, EXC-2026-11-17-05, EXC-2026-11-17-06",
+   "gateAsOfMerge": {
+    "failed": [
+     "F5.topology"
+    ],
+    "result": "fail"
+   },
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-2"
+   ],
+   "mergedAt": "2026-11-17T15:14:14Z",
+   "parents": [
+    "fc4dd5de7690d82244f835aaed785add336d23a4",
+    "c390738d2342500a3433cc651911d65be3688378"
+   ],
+   "pr": 60,
+   "result": "fail",
+   "sha": "0964c24e0f0218626e819e6f8d328b5d13f3b830"
+  },
+  {
+   "bypassException": {
+    "approvedAt": "2026-11-17",
+    "approvedBy": "factory-ryan-lauderback",
+    "label": "bypass-exception-3",
+    "pr": 62,
+    "reason": "FRQ-13 dry-run contract fixes: manifest story objects, review author id, qa-result subject, unpaired agent runs"
+   },
+   "commits": [
+    "d790cafda5306867a013e8641371e7d3ea5d4870",
+    "1c0b5c0e9d57cc7411c4585d88e399d669021478",
+    "ba86c942c16387393d332190dd04d62da6858999",
+    "cf0ecdfc1421c8674c63ea0442071c6edf83c1e4",
+    "db8c8445d8399361221809cc8c65c30a4ca686f4"
+   ],
+   "committedAt": "2026-11-17T07:56:39-08:00",
+   "evidence": {
+    "merge-record": "sha256:bfac2a0e5d8c4021e041199f0bc8226e67afac074157f718a98b94dd0af48acf"
+   },
+   "exception": "EXC-2026-11-17-07, EXC-2026-11-17-08, EXC-2026-11-17-09",
+   "gateAsOfMerge": {
+    "failed": [
+     "F5.topology"
+    ],
+    "result": "fail"
+   },
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-3"
+   ],
+   "mergedAt": "2026-11-17T15:56:40Z",
+   "parents": [
+    "0964c24e0f0218626e819e6f8d328b5d13f3b830",
+    "d790cafda5306867a013e8641371e7d3ea5d4870"
+   ],
+   "pr": 62,
+   "result": "fail",
+   "sha": "515187a1ceba42dae732250659f175338c03204e"
+  },
+  {
+   "commits": [
+    "fbfea609ac99cabd1504764f069c8e2858f930b0",
+    "0752fd003e21c81a1a4b87fad99599255af94fab",
+    "621353343952043a6fb4c4dabcad1c43cb862004",
+    "4951c4cf925fd49389593a258f77fd80b88229f3",
+    "cf7699f073d3915d157b46863890635b9de95eae"
+   ],
+   "committedAt": "2026-11-17T20:55:17Z",
+   "evidence": {
+    "merge-record": "sha256:efb909c6f985a30331817b208bbbe9be930bcc904b8cb903912f87d338c828ad"
+   },
+   "exception": null,
+   "gateAsOfMerge": {
+    "failed": [],
+    "result": "pass"
+   },
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "sod-shortcut-owner-approver"
+   ],
+   "mergedAt": "2026-11-17T20:55:18Z",
+   "parents": [
+    "515187a1ceba42dae732250659f175338c03204e",
+    "fbfea609ac99cabd1504764f069c8e2858f930b0"
+   ],
+   "pr": 61,
+   "result": "pass",
+   "sha": "96f212b0cc9278b25edc5010184d6cae666dcdd6"
   }
  ],
  "schema": "sox/reconciliation-report/v1",
