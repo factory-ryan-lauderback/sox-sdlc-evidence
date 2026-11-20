@@ -101,8 +101,8 @@
   "runId": "44186611573",
   "source": "app-inventory artifact"
  },
- "bundleMerkleLeaves": 37,
- "bundleMerkleRoot": "sha256:9af5da115b2a3d38ad9781445fbc263cb16ef3b78bd4c42a335d1244c3ed797b",
+ "bundleMerkleLeaves": 38,
+ "bundleMerkleRoot": "sha256:70fa12c77263a4fedee4d873f4b865321c24488d4918e6ce4f5a3f9d9dffec3a",
  "bypassExceptions": [
   {
    "approvedAt": "2026-11-17",
@@ -134,23 +134,23 @@
  ],
  "checkRuns": {
   "byApp": {
-   "gate": 164,
+   "gate": 176,
    "qa": 6,
    "review": 22
   },
   "commitsScanned": 147,
-  "count": 192,
+  "count": 204,
   "explained": 0,
   "goLiveReady": false,
-  "lastCheckRunId": 135267111052,
-  "paired": 21,
+  "lastCheckRunId": 136157225648,
+  "paired": 22,
   "success": 23,
-  "unexplainedUnpaired": 2,
+  "unexplainedUnpaired": 1,
   "unpaired": [
    {
     "app": "qa",
     "checkRunId": 134141442425,
-    "exception": "EXC-2026-11-19-12",
+    "exception": "EXC-2026-11-20-11",
     "externalId": "44112362356",
     "headSha": "37d7eb794fc4249e0a36e24545fc75cf25f2085d",
     "labels": [
@@ -160,20 +160,6 @@
     "reason": "no verified qa-result from run 44112362356 with checkRunId 134141442425 for head 37d7eb794fc4",
     "startedAt": "2026-11-17T15:16:42Z",
     "url": "https://github.com/factory-ryan-lauderback/sox-sdlc-sandbox/runs/134141442425"
-   },
-   {
-    "app": "review",
-    "checkRunId": 134179273711,
-    "exception": "EXC-2026-11-19-13",
-    "externalId": "44122871513",
-    "headSha": "2ac4b21731c5f367209391a323d6226f25ffdba1",
-    "labels": [
-     "app-key-exposed-not-rotated"
-    ],
-    "name": "sox/review-agent",
-    "reason": "no verified review-verdict from run 44122871513 with checkRunId 134179273711 for head 2ac4b21731c5",
-    "startedAt": "2026-11-17T16:12:12Z",
-    "url": "https://github.com/factory-ryan-lauderback/sox-sdlc-sandbox/runs/134179273711"
    }
   ]
  },
@@ -181,7 +167,7 @@
  "exceptions": [
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-01",
+   "id": "EXC-2026-11-20-01",
    "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
    "kind": "bypass-exception",
    "labels": [
@@ -192,7 +178,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-02",
+   "id": "EXC-2026-11-20-02",
    "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
    "kind": "merge-record-fail",
    "labels": [
@@ -203,7 +189,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-03",
+   "id": "EXC-2026-11-20-03",
    "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
    "kind": "gate-reperformance-fail",
    "labels": [
@@ -214,7 +200,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-04",
+   "id": "EXC-2026-11-20-04",
    "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
    "kind": "bypass-exception",
    "labels": [
@@ -225,7 +211,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-05",
+   "id": "EXC-2026-11-20-05",
    "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
    "kind": "merge-record-fail",
    "labels": [
@@ -236,7 +222,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-06",
+   "id": "EXC-2026-11-20-06",
    "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
    "kind": "gate-reperformance-fail",
    "labels": [
@@ -247,7 +233,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-07",
+   "id": "EXC-2026-11-20-07",
    "item": "commit:515187a1ceba42dae732250659f175338c03204e",
    "kind": "bypass-exception",
    "labels": [
@@ -258,7 +244,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-08",
+   "id": "EXC-2026-11-20-08",
    "item": "commit:515187a1ceba42dae732250659f175338c03204e",
    "kind": "merge-record-fail",
    "labels": [
@@ -269,7 +255,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-19-09",
+   "id": "EXC-2026-11-20-09",
    "item": "commit:515187a1ceba42dae732250659f175338c03204e",
    "kind": "gate-reperformance-fail",
    "labels": [
@@ -279,18 +265,8 @@
    "reason": "independent gate re-run as of merge fails ['F5.topology']"
   },
   {
-   "control": "SDLC-10",
-   "id": "EXC-2026-11-19-10",
-   "item": "commit:96f212b0cc9278b25edc5010184d6cae666dcdd6",
-   "kind": "gate-reperformance-fail",
-   "labels": [
-    "app-key-exposed-not-rotated"
-   ],
-   "reason": "independent gate re-run as of merge fails ['SDLC-05.story-pr#63', 'SDLC-09.packet']"
-  },
-  {
    "control": "CC-07",
-   "id": "EXC-2026-11-19-11",
+   "id": "EXC-2026-11-20-10",
    "item": "app-inventory:44186611573",
    "kind": "app-inventory-stale",
    "labels": [
@@ -300,28 +276,19 @@
   },
   {
    "control": "CC-02",
-   "id": "EXC-2026-11-19-12",
+   "id": "EXC-2026-11-20-11",
    "item": "check-run:134141442425",
    "kind": "check-without-evidence",
    "labels": [
     "app-key-exposed-not-rotated"
    ],
    "reason": "no verified qa-result from run 44112362356 with checkRunId 134141442425 for head 37d7eb794fc4"
-  },
-  {
-   "control": "CC-02",
-   "id": "EXC-2026-11-19-13",
-   "item": "check-run:134179273711",
-   "kind": "check-without-evidence",
-   "labels": [
-    "app-key-exposed-not-rotated"
-   ],
-   "reason": "no verified review-verdict from run 44122871513 with checkRunId 134179273711 for head 2ac4b21731c5"
   }
  ],
  "forgeryAttempts": [
-  "sha256:021f282a00e6e448fca91a7cc7722d8451734a43eefe58a46f9552db3e0b50d5",
   "sha256:24ed34528967ff052ab55d9a615751c782f00854355f02cd4a01c586c7186145",
+  "sha256:563eea9b042491be38396246d0e8b0b682ec7872980266c7e53f94b9ebde42a5",
+  "sha256:6cf00f0455ff79d1704ef833e5a702a04bffe35fd0ded530fb92f3bd28d38be3",
   "sha256:722e303b8e4d1e4c331156fbf6ccf1de7a3da678bde419dfe3a14b30ce7eb6b7",
   "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca",
   "sha256:adc27b7c154c6aa19be995322b2a790758faaa72317f680d4864b577f5279396"
@@ -332,11 +299,11 @@
   "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
  },
  "highWater": {
-  "lastCheckRunId": 135267111052,
+  "lastCheckRunId": 136157225648,
   "lastPrNumber": 62,
   "mainSha": "96f212b0cc9278b25edc5010184d6cae666dcdd6"
  },
- "id": "2026-11-19T04:33:15Z",
+ "id": "2026-11-20T12:03:56Z",
  "knownExceptions": [
   {
    "kind": "known-exception",
@@ -371,12 +338,12 @@
   "P5 rulesets, ruleset history and rule suites (owner token gets 403; unverified)",
   "P8 checkRunId-to-check-run resolution for every verified predicate"
  ],
- "observedAt": "2026-11-19T04:40:46Z",
- "openExceptions": 13,
+ "observedAt": "2026-11-20T12:11:38Z",
+ "openExceptions": 11,
  "outcome": "exceptions",
  "period": {
-  "from": "2026-11-18T04:32:09Z",
-  "to": "2026-11-19T04:33:15Z"
+  "from": "2026-11-19T04:33:15Z",
+  "to": "2026-11-20T12:03:56Z"
  },
  "policyDigest": "sha256:63c43f9178cd97c41fb67a55413db9d3694ac019730c00832c18dacc67be8693",
  "populations": {
@@ -396,14 +363,14 @@
   },
   "P8": {
    "commitsScanned": 147,
-   "count": 192,
+   "count": 204,
    "explained": 0,
-   "paired": 21,
+   "paired": 22,
    "success": 23,
-   "unexplainedUnpaired": 2
+   "unexplainedUnpaired": 1
   }
  },
- "previousReport": "sha256:cc8e263bd40c1c6f4c5509bc1f9518520b969eb7dc40977e408903d4c2b9f08c",
+ "previousReport": "sha256:9ee65631746df1e19658583f44113559b97eef2078163bc21b4e8e62d07a1caf",
  "reconcilerCodeSha": "96f212b0cc9278b25edc5010184d6cae666dcdd6",
  "repo": "factory-ryan-lauderback/sox-sdlc-sandbox",
  "required_steps": [
@@ -1438,7 +1405,7 @@
    "evidence": {
     "merge-record": "sha256:44e095f15d917083dcc2623bb44800266be572b4a1dfaa0680b57b1454db7871"
    },
-   "exception": "EXC-2026-11-19-01, EXC-2026-11-19-02, EXC-2026-11-19-03",
+   "exception": "EXC-2026-11-20-01, EXC-2026-11-20-02, EXC-2026-11-20-03",
    "gateAsOfMerge": {
     "failed": [
      "F5.topology"
@@ -1476,7 +1443,7 @@
    "evidence": {
     "merge-record": "sha256:f360e5bac5abeadd8d2b0025bde4552775ea6ea4309775fd9b3ccd934939b7a5"
    },
-   "exception": "EXC-2026-11-19-04, EXC-2026-11-19-05, EXC-2026-11-19-06",
+   "exception": "EXC-2026-11-20-04, EXC-2026-11-20-05, EXC-2026-11-20-06",
    "gateAsOfMerge": {
     "failed": [
      "F5.topology"
@@ -1516,7 +1483,7 @@
    "evidence": {
     "merge-record": "sha256:bfac2a0e5d8c4021e041199f0bc8226e67afac074157f718a98b94dd0af48acf"
    },
-   "exception": "EXC-2026-11-19-07, EXC-2026-11-19-08, EXC-2026-11-19-09",
+   "exception": "EXC-2026-11-20-07, EXC-2026-11-20-08, EXC-2026-11-20-09",
    "gateAsOfMerge": {
     "failed": [
      "F5.topology"
@@ -1549,13 +1516,10 @@
    "evidence": {
     "merge-record": "sha256:efb909c6f985a30331817b208bbbe9be930bcc904b8cb903912f87d338c828ad"
    },
-   "exception": "EXC-2026-11-19-10",
+   "exception": null,
    "gateAsOfMerge": {
-    "failed": [
-     "SDLC-05.story-pr#63",
-     "SDLC-09.packet"
-    ],
-    "result": "fail"
+    "failed": [],
+    "result": "pass"
    },
    "kind": "main-commit",
    "labels": [
@@ -1568,7 +1532,7 @@
     "fbfea609ac99cabd1504764f069c8e2858f930b0"
    ],
    "pr": 61,
-   "result": "fail",
+   "result": "pass",
    "sha": "96f212b0cc9278b25edc5010184d6cae666dcdd6"
   }
  ],
