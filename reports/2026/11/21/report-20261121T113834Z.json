@@ -1,0 +1,1539 @@
+{
+ "actor": {
+  "appId": 5702166,
+  "login": "acme-sox-reconciler[bot]",
+  "type": "github_app"
+ },
+ "appKeys": {
+  "at": "2026-11-17T22:06:26Z",
+  "keys": [
+   {
+    "appId": 5702160,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:QBzi3j+2S7NLqyjmC0XjqSzj4PSZpPQanoZEgYs9K/w=",
+    "pinned": "SHA256:QBzi3j+2S7NLqyjmC0XjqSzj4PSZpPQanoZEgYs9K/w=",
+    "result": "match",
+    "role": "bundler"
+   },
+   {
+    "appId": 5702161,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:qzK4+DD0QqyQR9aj1Ws8ZQfSvhV3DZymyVFwZbFtpnk=",
+    "pinned": "SHA256:qzK4+DD0QqyQR9aj1Ws8ZQfSvhV3DZymyVFwZbFtpnk=",
+    "result": "match",
+    "role": "dev"
+   },
+   {
+    "appId": 5702823,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:NXHfOL7KylmvyvyECRRe4nXNTcT5i+NqbLFkhk5EOGA=",
+    "pinned": "SHA256:NXHfOL7KylmvyvyECRRe4nXNTcT5i+NqbLFkhk5EOGA=",
+    "result": "match",
+    "role": "evidenceWriter"
+   },
+   {
+    "appId": 5702165,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:EPnB07C6MEwN55cP3JI4bz7wkcDPlA8Lu6jzl2fQXds=",
+    "pinned": "SHA256:EPnB07C6MEwN55cP3JI4bz7wkcDPlA8Lu6jzl2fQXds=",
+    "result": "match",
+    "role": "gate"
+   },
+   {
+    "appId": 5702824,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:ZIUvzehdfDu+/OY0Q2ZQoW71wCX6nmQw0G2tixAHOQU=",
+    "pinned": "SHA256:ZIUvzehdfDu+/OY0Q2ZQoW71wCX6nmQw0G2tixAHOQU=",
+    "result": "match",
+    "role": "jiraAttestor"
+   },
+   {
+    "appId": 5702164,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:mfCasoTIMuj38RRRgPRPNvLiiLHunIXFt51E5Zt5qP4=",
+    "pinned": "SHA256:mfCasoTIMuj38RRRgPRPNvLiiLHunIXFt51E5Zt5qP4=",
+    "result": "match",
+    "role": "qa"
+   },
+   {
+    "appId": 5702166,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:xO9mFuZc9UqGXiCmRD/0fxvbuBa8kszCeqYq7tFQOJY=",
+    "pinned": "SHA256:xO9mFuZc9UqGXiCmRD/0fxvbuBa8kszCeqYq7tFQOJY=",
+    "result": "match",
+    "role": "reconciler"
+   },
+   {
+    "appId": 5702162,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:G6VL8y2Gp+/CXwNhL6318S+VH2OCeoM1nX6mD0gnHRY=",
+    "pinned": "SHA256:G6VL8y2Gp+/CXwNhL6318S+VH2OCeoM1nX6mD0gnHRY=",
+    "result": "match",
+    "role": "review"
+   },
+   {
+    "appId": 5702158,
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "observed": "SHA256:K+Wn1dUaMB96SN2xS/eIs9wCv5twKF6xtv2aO3qg+Tg=",
+    "pinned": "SHA256:K+Wn1dUaMB96SN2xS/eIs9wCv5twKF6xtv2aO3qg+Tg=",
+    "result": "match",
+    "role": "techlead"
+   }
+  ],
+  "runId": "44186611573",
+  "source": "app-inventory artifact"
+ },
+ "bundleMerkleLeaves": 38,
+ "bundleMerkleRoot": "sha256:70fa12c77263a4fedee4d873f4b865321c24488d4918e6ce4f5a3f9d9dffec3a",
+ "bypassExceptions": [
+  {
+   "approvedAt": "2026-11-17",
+   "approvedBy": "factory-ryan-lauderback",
+   "label": "bypass-exception-1",
+   "mergeCommitSha": "fc4dd5de7690d82244f835aaed785add336d23a4",
+   "onMain": true,
+   "pr": 58,
+   "reason": "PM/TL context hidden-files fix; no control-change path yet"
+  },
+  {
+   "approvedAt": "2026-11-17",
+   "approvedBy": "factory-ryan-lauderback",
+   "label": "bypass-exception-2",
+   "mergeCommitSha": "0964c24e0f0218626e819e6f8d328b5d13f3b830",
+   "onMain": true,
+   "pr": 60,
+   "reason": "check-run ids exceed 9 digits"
+  },
+  {
+   "approvedAt": "2026-11-17",
+   "approvedBy": "factory-ryan-lauderback",
+   "label": "bypass-exception-3",
+   "mergeCommitSha": "515187a1ceba42dae732250659f175338c03204e",
+   "onMain": true,
+   "pr": 62,
+   "reason": "FRQ-13 dry-run contract fixes: manifest story objects, review author id, qa-result subject, unpaired agent runs"
+  }
+ ],
+ "checkRuns": {
+  "byApp": {
+   "gate": 185,
+   "qa": 6,
+   "review": 22
+  },
+  "commitsScanned": 147,
+  "count": 213,
+  "explained": 0,
+  "goLiveReady": false,
+  "lastCheckRunId": 136718958173,
+  "paired": 22,
+  "success": 23,
+  "unexplainedUnpaired": 1,
+  "unpaired": [
+   {
+    "app": "qa",
+    "checkRunId": 134141442425,
+    "exception": "EXC-2026-11-21-11",
+    "externalId": "44112362356",
+    "headSha": "37d7eb794fc4249e0a36e24545fc75cf25f2085d",
+    "labels": [
+     "app-key-exposed-not-rotated"
+    ],
+    "name": "sox/qa-agent",
+    "reason": "no verified qa-result from run 44112362356 with checkRunId 134141442425 for head 37d7eb794fc4",
+    "startedAt": "2026-11-17T15:16:42Z",
+    "url": "https://github.com/factory-ryan-lauderback/sox-sdlc-sandbox/runs/134141442425"
+   }
+  ]
+ },
+ "configDrift": [],
+ "exceptions": [
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-01",
+   "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
+   "kind": "bypass-exception",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-1"
+   ],
+   "reason": "PR #58 merged under a recorded bypass of main-protection, approved by factory-ryan-lauderback on 2026-11-17: PM/TL context hidden-files fix; no control-change path yet"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-02",
+   "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
+   "kind": "merge-record-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-1"
+   ],
+   "reason": "merge-record outcome 'fail', treeMatch True, checksPaired False"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-03",
+   "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
+   "kind": "gate-reperformance-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-1"
+   ],
+   "reason": "independent gate re-run as of merge fails ['F5.topology']"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-04",
+   "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
+   "kind": "bypass-exception",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-2"
+   ],
+   "reason": "PR #60 merged under a recorded bypass of main-protection, approved by factory-ryan-lauderback on 2026-11-17: check-run ids exceed 9 digits"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-05",
+   "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
+   "kind": "merge-record-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-2"
+   ],
+   "reason": "merge-record outcome 'fail', treeMatch True, checksPaired False"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-06",
+   "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
+   "kind": "gate-reperformance-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-2"
+   ],
+   "reason": "independent gate re-run as of merge fails ['F5.topology']"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-07",
+   "item": "commit:515187a1ceba42dae732250659f175338c03204e",
+   "kind": "bypass-exception",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-3"
+   ],
+   "reason": "PR #62 merged under a recorded bypass of main-protection, approved by factory-ryan-lauderback on 2026-11-17: FRQ-13 dry-run contract fixes: manifest story objects, review author id, qa-result subject, unpaired agent runs"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-08",
+   "item": "commit:515187a1ceba42dae732250659f175338c03204e",
+   "kind": "merge-record-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-3"
+   ],
+   "reason": "merge-record outcome 'fail', treeMatch True, checksPaired False"
+  },
+  {
+   "control": "SDLC-10",
+   "id": "EXC-2026-11-21-09",
+   "item": "commit:515187a1ceba42dae732250659f175338c03204e",
+   "kind": "gate-reperformance-fail",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-3"
+   ],
+   "reason": "independent gate re-run as of merge fails ['F5.topology']"
+  },
+  {
+   "control": "CC-07",
+   "id": "EXC-2026-11-21-10",
+   "item": "app-inventory:44186611573",
+   "kind": "app-inventory-stale",
+   "labels": [
+    "app-key-exposed-not-rotated"
+   ],
+   "reason": "latest app-inventory is from 2026-11-17T22:06:26Z, older than 26 h"
+  },
+  {
+   "control": "CC-02",
+   "id": "EXC-2026-11-21-11",
+   "item": "check-run:134141442425",
+   "kind": "check-without-evidence",
+   "labels": [
+    "app-key-exposed-not-rotated"
+   ],
+   "reason": "no verified qa-result from run 44112362356 with checkRunId 134141442425 for head 37d7eb794fc4"
+  }
+ ],
+ "forgeryAttempts": [
+  "sha256:24ed34528967ff052ab55d9a615751c782f00854355f02cd4a01c586c7186145",
+  "sha256:722e303b8e4d1e4c331156fbf6ccf1de7a3da678bde419dfe3a14b30ce7eb6b7",
+  "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca",
+  "sha256:adc27b7c154c6aa19be995322b2a790758faaa72317f680d4864b577f5279396"
+ ],
+ "goLive": {
+  "anchorPr": 45,
+  "at": "2026-11-17T05:05:30Z",
+  "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
+ },
+ "highWater": {
+  "lastCheckRunId": 136718958173,
+  "lastPrNumber": 62,
+  "mainSha": "96f212b0cc9278b25edc5010184d6cae666dcdd6"
+ },
+ "id": "2026-11-21T11:38:34Z",
+ "knownExceptions": [
+  {
+   "kind": "known-exception",
+   "label": "app-key-exposed-not-rotated"
+  },
+  {
+   "kind": "known-exception",
+   "label": "bootstrap-pre-go-live"
+  },
+  {
+   "kind": "known-exception",
+   "label": "bypass-exception-1"
+  },
+  {
+   "kind": "known-exception",
+   "label": "bypass-exception-2"
+  },
+  {
+   "kind": "known-exception",
+   "label": "bypass-exception-3"
+  },
+  {
+   "kind": "known-exception",
+   "label": "sod-shortcut-owner-approver"
+  }
+ ],
+ "notImplemented": [
+  "P3 story PRs into release/** (covered per release by the gate's story chain)",
+  "P4 production deploys",
+  "P6 credential scans",
+  "P7 emergency-retro timing",
+  "P5 rulesets, ruleset history and rule suites (owner token gets 403; unverified)",
+  "P8 checkRunId-to-check-run resolution for every verified predicate"
+ ],
+ "observedAt": "2026-11-21T11:45:25Z",
+ "openExceptions": 11,
+ "outcome": "exceptions",
+ "period": {
+  "from": "2026-11-20T12:03:56Z",
+  "to": "2026-11-21T11:38:34Z"
+ },
+ "policyDigest": "sha256:63c43f9178cd97c41fb67a55413db9d3694ac019730c00832c18dacc67be8693",
+ "populations": {
+  "P1": {
+   "count": 51,
+   "query": "git rev-list --first-parent 96f212b0cc9278b25edc5010184d6cae666dcdd6",
+   "reachableCommits": 120
+  },
+  "P2": {
+   "bypassMerges": 3,
+   "count": 49,
+   "mergedNotOnFirstParent": [],
+   "mergesOnMain": 49
+  },
+  "P5": {
+   "count": 9
+  },
+  "P8": {
+   "commitsScanned": 147,
+   "count": 213,
+   "explained": 0,
+   "paired": 22,
+   "success": 23,
+   "unexplainedUnpaired": 1
+  }
+ },
+ "previousReport": "sha256:29ca14589cb41bcaa55a8eda9e217cf1218681437b81350ee5f7c85aa6313b02",
+ "reconcilerCodeSha": "96f212b0cc9278b25edc5010184d6cae666dcdd6",
+ "repo": "factory-ryan-lauderback/sox-sdlc-sandbox",
+ "required_steps": [
+  "merge-record"
+ ],
+ "rows": [
+  {
+   "commits": [],
+   "committedAt": "2026-11-10T19:30:18Z",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": null,
+   "parents": [],
+   "pr": null,
+   "result": "bootstrap",
+   "sha": "ac882c4f58c1d74c2188e6a8253470d5e9c56d18"
+  },
+  {
+   "commits": [],
+   "committedAt": "2026-11-10T19:33:06Z",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": null,
+   "parents": [
+    "ac882c4f58c1d74c2188e6a8253470d5e9c56d18"
+   ],
+   "pr": null,
+   "result": "bootstrap",
+   "sha": "4de627863b24da9d1588afb81d1275ab5fe72d27"
+  },
+  {
+   "commits": [
+    "01e70d9b5e81e08f889231f713d1e5fc069f1464"
+   ],
+   "committedAt": "2026-11-10T14:39:39-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T19:39:40Z",
+   "parents": [
+    "4de627863b24da9d1588afb81d1275ab5fe72d27",
+    "01e70d9b5e81e08f889231f713d1e5fc069f1464"
+   ],
+   "pr": 1,
+   "result": "bootstrap",
+   "sha": "d0db95228e145820e9be38f285ec715781a231ac"
+  },
+  {
+   "commits": [
+    "3f9f486b6420b99a6b4c7b1a5db090b82e6a6b37"
+   ],
+   "committedAt": "2026-11-10T14:41:00-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T19:41:01Z",
+   "parents": [
+    "d0db95228e145820e9be38f285ec715781a231ac",
+    "3f9f486b6420b99a6b4c7b1a5db090b82e6a6b37"
+   ],
+   "pr": 2,
+   "result": "bootstrap",
+   "sha": "a3c163a71e45a281f1ac8926045eb690082af6ed"
+  },
+  {
+   "commits": [
+    "1182049b926fb01ddc9424dc2615cca1e2fc5155"
+   ],
+   "committedAt": "2026-11-10T14:54:49-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T19:54:50Z",
+   "parents": [
+    "a3c163a71e45a281f1ac8926045eb690082af6ed",
+    "1182049b926fb01ddc9424dc2615cca1e2fc5155"
+   ],
+   "pr": 4,
+   "result": "bootstrap",
+   "sha": "9a35566b12909969792f1cf87816af4ab4d649cd"
+  },
+  {
+   "commits": [
+    "ebc47f9923120d84410c472e437afd85ea7419f0"
+   ],
+   "committedAt": "2026-11-10T15:01:42-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:01:43Z",
+   "parents": [
+    "9a35566b12909969792f1cf87816af4ab4d649cd",
+    "ebc47f9923120d84410c472e437afd85ea7419f0"
+   ],
+   "pr": 5,
+   "result": "bootstrap",
+   "sha": "da2f9d936921506be650862659be86c8f04d59d6"
+  },
+  {
+   "commits": [
+    "3e1a87fbc4132eb98de0d5a48a5f84802f515b14"
+   ],
+   "committedAt": "2026-11-10T15:10:44-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:10:45Z",
+   "parents": [
+    "da2f9d936921506be650862659be86c8f04d59d6",
+    "3e1a87fbc4132eb98de0d5a48a5f84802f515b14"
+   ],
+   "pr": 6,
+   "result": "bootstrap",
+   "sha": "82d85f138b1095740f00d395671abcb98068f5e4"
+  },
+  {
+   "commits": [
+    "326df3bf1d068cbfd37f732c3933b395e505700d"
+   ],
+   "committedAt": "2026-11-10T15:18:21-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:18:22Z",
+   "parents": [
+    "82d85f138b1095740f00d395671abcb98068f5e4",
+    "326df3bf1d068cbfd37f732c3933b395e505700d"
+   ],
+   "pr": 7,
+   "result": "bootstrap",
+   "sha": "876a87ee190a9eb3c7f4006a2e503d6661c6ad98"
+  },
+  {
+   "commits": [
+    "459a997b905238c230a3b2b8c6f78934cdef9133"
+   ],
+   "committedAt": "2026-11-10T15:26:36-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:26:37Z",
+   "parents": [
+    "876a87ee190a9eb3c7f4006a2e503d6661c6ad98",
+    "459a997b905238c230a3b2b8c6f78934cdef9133"
+   ],
+   "pr": 8,
+   "result": "bootstrap",
+   "sha": "3d43117f69ae1f0a28c6fb29ffffbfb4507f464f"
+  },
+  {
+   "commits": [
+    "6ed234249a3e91e3044f92f5690eae17beb611ef"
+   ],
+   "committedAt": "2026-11-10T15:27:21-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:27:22Z",
+   "parents": [
+    "3d43117f69ae1f0a28c6fb29ffffbfb4507f464f",
+    "6ed234249a3e91e3044f92f5690eae17beb611ef"
+   ],
+   "pr": 9,
+   "result": "bootstrap",
+   "sha": "0ae4c63fc4beb03d7cbbca0a262f47977977df84"
+  },
+  {
+   "commits": [
+    "5f5fd2de12558cf19d1e4d10a616a16b9913801b"
+   ],
+   "committedAt": "2026-11-10T15:31:47-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:31:47Z",
+   "parents": [
+    "0ae4c63fc4beb03d7cbbca0a262f47977977df84",
+    "5f5fd2de12558cf19d1e4d10a616a16b9913801b"
+   ],
+   "pr": 10,
+   "result": "bootstrap",
+   "sha": "cd9345bfc806614e39465afa558cfa903aca02bc"
+  },
+  {
+   "commits": [
+    "bab5f68fca457ac5d0c957378d5e492c3b1ff5b2"
+   ],
+   "committedAt": "2026-11-10T15:33:04-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:33:05Z",
+   "parents": [
+    "cd9345bfc806614e39465afa558cfa903aca02bc",
+    "bab5f68fca457ac5d0c957378d5e492c3b1ff5b2"
+   ],
+   "pr": 11,
+   "result": "bootstrap",
+   "sha": "6bc943e37377b601f34c0fc6e5b0d69ff1914597"
+  },
+  {
+   "commits": [
+    "6a1027fcd934eceebe545f8a38692c87088621a4"
+   ],
+   "committedAt": "2026-11-10T15:40:03-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:40:03Z",
+   "parents": [
+    "6bc943e37377b601f34c0fc6e5b0d69ff1914597",
+    "6a1027fcd934eceebe545f8a38692c87088621a4"
+   ],
+   "pr": 12,
+   "result": "bootstrap",
+   "sha": "325a54dc4661107f30065e3bf8d68cadfb5d3d02"
+  },
+  {
+   "commits": [
+    "7e279917723f40b19da6902ad5636c68ecb29c72",
+    "9842ec74b73b786a81a683b0eb1f68b366c2c198",
+    "be9c5f34c7e98c6d18b2f860915755ecbd6aef51",
+    "0117b0779f9e79a256b9da3c475d0d3066a0f791"
+   ],
+   "committedAt": "2026-11-10T15:41:08-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:41:09Z",
+   "parents": [
+    "325a54dc4661107f30065e3bf8d68cadfb5d3d02",
+    "7e279917723f40b19da6902ad5636c68ecb29c72"
+   ],
+   "pr": 3,
+   "result": "bootstrap",
+   "sha": "fb39f6b07de32137ebb9ad5713d908cbe8c7779a"
+  },
+  {
+   "commits": [
+    "80182dfac312b10a445c1594e065348eb4284245"
+   ],
+   "committedAt": "2026-11-10T15:41:12-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:41:13Z",
+   "parents": [
+    "fb39f6b07de32137ebb9ad5713d908cbe8c7779a",
+    "80182dfac312b10a445c1594e065348eb4284245"
+   ],
+   "pr": 13,
+   "result": "bootstrap",
+   "sha": "dd4bea1639f8bedf691a74ed170a5de031677599"
+  },
+  {
+   "commits": [
+    "a32e43bcf70c551f4c2e48f77df2317231eb6fca"
+   ],
+   "committedAt": "2026-11-10T15:43:03-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:43:03Z",
+   "parents": [
+    "dd4bea1639f8bedf691a74ed170a5de031677599",
+    "a32e43bcf70c551f4c2e48f77df2317231eb6fca"
+   ],
+   "pr": 14,
+   "result": "bootstrap",
+   "sha": "5a3f0dae8f369b196ef67cc6b35e6f8a7117f99d"
+  },
+  {
+   "commits": [
+    "7764fdd454df82e26182cfd113cd4371f96306fd"
+   ],
+   "committedAt": "2026-11-10T15:44:05-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:44:05Z",
+   "parents": [
+    "5a3f0dae8f369b196ef67cc6b35e6f8a7117f99d",
+    "7764fdd454df82e26182cfd113cd4371f96306fd"
+   ],
+   "pr": 15,
+   "result": "bootstrap",
+   "sha": "a71cc6b4b1feae39300a61bce1bf1dea851ebbb5"
+  },
+  {
+   "commits": [
+    "dd3b1dd53814860b15081cebf6416e1a5ea2b9e0"
+   ],
+   "committedAt": "2026-11-10T15:45:11-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:45:13Z",
+   "parents": [
+    "a71cc6b4b1feae39300a61bce1bf1dea851ebbb5",
+    "dd3b1dd53814860b15081cebf6416e1a5ea2b9e0"
+   ],
+   "pr": 16,
+   "result": "bootstrap",
+   "sha": "a345f40bf6008696da80f95a7e644beab07cf23e"
+  },
+  {
+   "commits": [
+    "90de4974e3b9cfd95fadee0c9c9442310658c071"
+   ],
+   "committedAt": "2026-11-10T15:45:41-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:45:41Z",
+   "parents": [
+    "a345f40bf6008696da80f95a7e644beab07cf23e",
+    "90de4974e3b9cfd95fadee0c9c9442310658c071"
+   ],
+   "pr": 17,
+   "result": "bootstrap",
+   "sha": "5517f5968d021fe4e6b2b15824b276a703ffc574"
+  },
+  {
+   "commits": [
+    "0b50ca3ccd69b0090d527dc4fc04cd1c62cc1259",
+    "fa6ab4f9e85501f361dcc348c89a50d52f8c666e"
+   ],
+   "committedAt": "2026-11-10T15:46:15-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:46:15Z",
+   "parents": [
+    "5517f5968d021fe4e6b2b15824b276a703ffc574",
+    "0b50ca3ccd69b0090d527dc4fc04cd1c62cc1259"
+   ],
+   "pr": 18,
+   "result": "bootstrap",
+   "sha": "4bddc4680455c9b346e3c9993e65b983b48bd8fc"
+  },
+  {
+   "commits": [
+    "b57e02903402d5897a969911d851fad925864f41"
+   ],
+   "committedAt": "2026-11-10T15:49:19-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:49:19Z",
+   "parents": [
+    "4bddc4680455c9b346e3c9993e65b983b48bd8fc",
+    "b57e02903402d5897a969911d851fad925864f41"
+   ],
+   "pr": 19,
+   "result": "bootstrap",
+   "sha": "53dfbe9dfa1df74cf6f22201a3ed217e4d667b59"
+  },
+  {
+   "commits": [
+    "c15bbe4be29b21ba23d8221b7e7f3d9c3af9e559"
+   ],
+   "committedAt": "2026-11-10T15:50:18-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:50:19Z",
+   "parents": [
+    "53dfbe9dfa1df74cf6f22201a3ed217e4d667b59",
+    "c15bbe4be29b21ba23d8221b7e7f3d9c3af9e559"
+   ],
+   "pr": 20,
+   "result": "bootstrap",
+   "sha": "b6b3cef33885321ffb387b87e34e5f15959313aa"
+  },
+  {
+   "commits": [
+    "1c1aef32723dfb31547da8d25cde8a1878f3b0d3"
+   ],
+   "committedAt": "2026-11-10T15:58:03-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:58:04Z",
+   "parents": [
+    "b6b3cef33885321ffb387b87e34e5f15959313aa",
+    "1c1aef32723dfb31547da8d25cde8a1878f3b0d3"
+   ],
+   "pr": 21,
+   "result": "bootstrap",
+   "sha": "d5e02a57a23e7afc09aeb6e1ce89255104aca395"
+  },
+  {
+   "commits": [
+    "712ec8f68564cccaf730dfb549e9986b3463f96e"
+   ],
+   "committedAt": "2026-11-10T15:59:01-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:59:02Z",
+   "parents": [
+    "d5e02a57a23e7afc09aeb6e1ce89255104aca395",
+    "712ec8f68564cccaf730dfb549e9986b3463f96e"
+   ],
+   "pr": 23,
+   "result": "bootstrap",
+   "sha": "b37100315e3acfd3d4a389729bdb6d9bb12cf68d"
+  },
+  {
+   "commits": [
+    "62853382e388111e63b642fa290e2c39d4ffc2ad"
+   ],
+   "committedAt": "2026-11-10T15:59:27-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T20:59:28Z",
+   "parents": [
+    "b37100315e3acfd3d4a389729bdb6d9bb12cf68d",
+    "62853382e388111e63b642fa290e2c39d4ffc2ad"
+   ],
+   "pr": 22,
+   "result": "bootstrap",
+   "sha": "fd45d2c0d4938490d369dc019954e1233e85b236"
+  },
+  {
+   "commits": [
+    "2d51bfb3ed819e407aa4188b6d72d6407ec5d225"
+   ],
+   "committedAt": "2026-11-10T16:03:10-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T21:03:10Z",
+   "parents": [
+    "fd45d2c0d4938490d369dc019954e1233e85b236",
+    "2d51bfb3ed819e407aa4188b6d72d6407ec5d225"
+   ],
+   "pr": 24,
+   "result": "bootstrap",
+   "sha": "f29ed565fb44d7d780755e0ff483a146350336b9"
+  },
+  {
+   "commits": [
+    "638b8bfa37d09f8c7fcd09fba4767a0bee347b39"
+   ],
+   "committedAt": "2026-11-10T16:05:04-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T21:05:05Z",
+   "parents": [
+    "f29ed565fb44d7d780755e0ff483a146350336b9",
+    "638b8bfa37d09f8c7fcd09fba4767a0bee347b39"
+   ],
+   "pr": 25,
+   "result": "bootstrap",
+   "sha": "9ff934ba087a957350938bdb1eb240b7e479081a"
+  },
+  {
+   "commits": [
+    "033d717683588484af947610da993f04330c353b"
+   ],
+   "committedAt": "2026-11-10T16:10:12-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T21:10:13Z",
+   "parents": [
+    "9ff934ba087a957350938bdb1eb240b7e479081a",
+    "033d717683588484af947610da993f04330c353b"
+   ],
+   "pr": 27,
+   "result": "bootstrap",
+   "sha": "e3cf5e401bf3cf11a56039675f566e1cdfdf3f9d"
+  },
+  {
+   "commits": [
+    "e68ec626e9a06b506fa6cc49554c90f149c70713"
+   ],
+   "committedAt": "2026-11-10T16:10:43-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T21:10:43Z",
+   "parents": [
+    "e3cf5e401bf3cf11a56039675f566e1cdfdf3f9d",
+    "e68ec626e9a06b506fa6cc49554c90f149c70713"
+   ],
+   "pr": 26,
+   "result": "bootstrap",
+   "sha": "a1ccb5a5bb70e576c219c0268257990c2b015b90"
+  },
+  {
+   "commits": [
+    "7fd23bf27006eb1bea241c1d60a0cd5b1392d4cf"
+   ],
+   "committedAt": "2026-11-10T16:22:36-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T21:22:37Z",
+   "parents": [
+    "a1ccb5a5bb70e576c219c0268257990c2b015b90",
+    "7fd23bf27006eb1bea241c1d60a0cd5b1392d4cf"
+   ],
+   "pr": 28,
+   "result": "bootstrap",
+   "sha": "0d0faed9b4d546e500ee3f4cfa797fdc7a0447e1"
+  },
+  {
+   "commits": [
+    "7cc00526763c9ab92c4ebc33cb86f8bf44e2737c"
+   ],
+   "committedAt": "2026-11-10T16:25:09-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T21:25:10Z",
+   "parents": [
+    "0d0faed9b4d546e500ee3f4cfa797fdc7a0447e1",
+    "7cc00526763c9ab92c4ebc33cb86f8bf44e2737c"
+   ],
+   "pr": 29,
+   "result": "bootstrap",
+   "sha": "4762775f07b6e88506327b41b5e7f070f2aaff06"
+  },
+  {
+   "commits": [
+    "1f7b1f8ec13d8dd6d21c50ed931d0357d4bd0db1"
+   ],
+   "committedAt": "2026-11-10T16:45:23-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T21:45:24Z",
+   "parents": [
+    "4762775f07b6e88506327b41b5e7f070f2aaff06",
+    "1f7b1f8ec13d8dd6d21c50ed931d0357d4bd0db1"
+   ],
+   "pr": 30,
+   "result": "bootstrap",
+   "sha": "4589040438f0eb069d16c330d57df67df6ecb833"
+  },
+  {
+   "commits": [
+    "21da74e09cde94b96c8ce8bc6f8650cb06140ee2"
+   ],
+   "committedAt": "2026-11-10T16:54:18-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T21:54:19Z",
+   "parents": [
+    "4589040438f0eb069d16c330d57df67df6ecb833",
+    "21da74e09cde94b96c8ce8bc6f8650cb06140ee2"
+   ],
+   "pr": 31,
+   "result": "bootstrap",
+   "sha": "ae773e7146a9b463be314b9555ddb50bd9528404"
+  },
+  {
+   "commits": [
+    "e055294f65848b7264ef258b93b8bd821d68fa3c"
+   ],
+   "committedAt": "2026-11-10T17:02:11-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T22:02:12Z",
+   "parents": [
+    "ae773e7146a9b463be314b9555ddb50bd9528404",
+    "e055294f65848b7264ef258b93b8bd821d68fa3c"
+   ],
+   "pr": 33,
+   "result": "bootstrap",
+   "sha": "35655b565b12fd72dc2802e77b5c5562903189f0"
+  },
+  {
+   "commits": [
+    "d6b7c9d870372eef01b7f9ccc0b2704f4dd92653"
+   ],
+   "committedAt": "2026-11-10T17:06:13-05:00",
+   "evidence": {},
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-10T22:06:14Z",
+   "parents": [
+    "35655b565b12fd72dc2802e77b5c5562903189f0",
+    "d6b7c9d870372eef01b7f9ccc0b2704f4dd92653"
+   ],
+   "pr": 34,
+   "result": "bootstrap",
+   "sha": "0bbfff1f7c460262a3b821a1c6346f2f68f914f6"
+  },
+  {
+   "commits": [
+    "b3d4652b1dc088d7779f5bb942599eedcde4917f"
+   ],
+   "committedAt": "2026-11-16T20:20:28-08:00",
+   "evidence": {
+    "merge-record": "sha256:aa3d85596570db6c58f296c8d0d5061e4e972af5239edaf33516d1da1dc98542"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:20:28Z",
+   "parents": [
+    "0bbfff1f7c460262a3b821a1c6346f2f68f914f6",
+    "b3d4652b1dc088d7779f5bb942599eedcde4917f"
+   ],
+   "pr": 35,
+   "result": "pass",
+   "sha": "c226790c9131730e00628d7b6d2b0b17f85bd7f7"
+  },
+  {
+   "commits": [
+    "c29a955ec4e79198781bcbc8d9276776139849bd"
+   ],
+   "committedAt": "2026-11-16T20:21:43-08:00",
+   "evidence": {
+    "merge-record": "sha256:14bb1c731fd37280892101c97161c562e65e3b391e111678bcfa4a63abab0c51"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:21:44Z",
+   "parents": [
+    "c226790c9131730e00628d7b6d2b0b17f85bd7f7",
+    "c29a955ec4e79198781bcbc8d9276776139849bd"
+   ],
+   "pr": 36,
+   "result": "pass",
+   "sha": "b5c525805b3eae4c53548dd33ba1953c704c3cc7"
+  },
+  {
+   "commits": [
+    "1517c1c8c1a06f877c699c6036106b476894a551"
+   ],
+   "committedAt": "2026-11-16T20:23:28-08:00",
+   "evidence": {
+    "merge-record": "sha256:cabe19560ecc2f74ec0d58996faba1cc036c3980e6337d1006da626f693a0166"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:23:29Z",
+   "parents": [
+    "b5c525805b3eae4c53548dd33ba1953c704c3cc7",
+    "1517c1c8c1a06f877c699c6036106b476894a551"
+   ],
+   "pr": 37,
+   "result": "pass",
+   "sha": "d0d20723bee23a852a4deb25523cea29c26a1359"
+  },
+  {
+   "commits": [
+    "7d3cff85215bb8d5217273e78d13e8841cfb3d26"
+   ],
+   "committedAt": "2026-11-16T20:23:46-08:00",
+   "evidence": {
+    "merge-record": "sha256:3af1d73e7e2d0c6cf80eeaa0727bc2b4d9b1b7751016fe7df3f7c79ae74a1b29"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:23:47Z",
+   "parents": [
+    "d0d20723bee23a852a4deb25523cea29c26a1359",
+    "7d3cff85215bb8d5217273e78d13e8841cfb3d26"
+   ],
+   "pr": 38,
+   "result": "pass",
+   "sha": "5cca57524fb49a7acb837d5f833e61dd116bf2b2"
+  },
+  {
+   "commits": [
+    "8674d0678279abf5738a5da1fbc722d9220b35a2"
+   ],
+   "committedAt": "2026-11-16T20:25:12-08:00",
+   "evidence": {
+    "merge-record": "sha256:2ff4b6b036661038e524467588746b7b4a48f62e48274225697ff46c7927626d"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:25:13Z",
+   "parents": [
+    "5cca57524fb49a7acb837d5f833e61dd116bf2b2",
+    "8674d0678279abf5738a5da1fbc722d9220b35a2"
+   ],
+   "pr": 39,
+   "result": "pass",
+   "sha": "210fbd7212ae2a85a185e56308e906d3ed8a01a8"
+  },
+  {
+   "commits": [
+    "8faa65a2067725a47bddc88a8172480957f57740"
+   ],
+   "committedAt": "2026-11-16T20:28:28-08:00",
+   "evidence": {
+    "merge-record": "sha256:d662159c657b56aa47b9d57a5d58ad7c5ced62549bb23c0179047ab9bc5aa7e2"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:28:28Z",
+   "parents": [
+    "210fbd7212ae2a85a185e56308e906d3ed8a01a8",
+    "8faa65a2067725a47bddc88a8172480957f57740"
+   ],
+   "pr": 40,
+   "result": "pass",
+   "sha": "30173ad8e851b2c4a37a296fb83555cd7118d0b8"
+  },
+  {
+   "commits": [
+    "7f8a2fed8f0b6f2b6362b09dd3be74483ef5c1f4",
+    "da4651245e403c47939e69843932d039d7412990",
+    "9d3e2ee9ca6bcfdc921fce7cb85b05424f210dec",
+    "2f83cdeb95d27c581250fcbd74e0d56506e21615"
+   ],
+   "committedAt": "2026-11-16T20:34:08-08:00",
+   "evidence": {
+    "merge-record": "sha256:ed6829952aa85d86a1031b4d088faa9a8ec74febccc3f1587760017f05640db7"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:34:09Z",
+   "parents": [
+    "30173ad8e851b2c4a37a296fb83555cd7118d0b8",
+    "7f8a2fed8f0b6f2b6362b09dd3be74483ef5c1f4"
+   ],
+   "pr": 32,
+   "result": "pass",
+   "sha": "c9b7f558d9debfb286bf58d51012e30f54cba54e"
+  },
+  {
+   "commits": [
+    "f4f24b65736f75fbaa79463e4a94bdb6bc695f3b"
+   ],
+   "committedAt": "2026-11-16T20:36:26-08:00",
+   "evidence": {
+    "merge-record": "sha256:bd81e1b617027703cd2d5e49c47a72e85e1671e08d7166a45bbe6005c7de1500"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:36:27Z",
+   "parents": [
+    "c9b7f558d9debfb286bf58d51012e30f54cba54e",
+    "f4f24b65736f75fbaa79463e4a94bdb6bc695f3b"
+   ],
+   "pr": 41,
+   "result": "pass",
+   "sha": "59e90b61f90f68bcfbafdce551ff6f69c28b82d1"
+  },
+  {
+   "commits": [
+    "69949a0d02ee592837223a769f38675a7859ea09"
+   ],
+   "committedAt": "2026-11-16T20:38:39-08:00",
+   "evidence": {
+    "merge-record": "sha256:19ad68365fc7a61b20fb5fdd056e1c525b16aeff8cd9054c79503a873c5c46c4"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:38:39Z",
+   "parents": [
+    "59e90b61f90f68bcfbafdce551ff6f69c28b82d1",
+    "69949a0d02ee592837223a769f38675a7859ea09"
+   ],
+   "pr": 42,
+   "result": "pass",
+   "sha": "08cbf2877fe07819ec4bb15e17a65c84035fef2b"
+  },
+  {
+   "commits": [
+    "1d977de6fdaf1c56a31a9ba4130acdd561cceca0"
+   ],
+   "committedAt": "2026-11-16T20:47:30-08:00",
+   "evidence": {
+    "merge-record": "sha256:751e9e09c28c0b6fa98a241782adb0d62a639e3b7e88edb52a1f01a368e792ab"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:47:31Z",
+   "parents": [
+    "08cbf2877fe07819ec4bb15e17a65c84035fef2b",
+    "1d977de6fdaf1c56a31a9ba4130acdd561cceca0"
+   ],
+   "pr": 43,
+   "result": "pass",
+   "sha": "ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419"
+  },
+  {
+   "commits": [
+    "5932714476d6e39241edc4ce6c62c110a14ebaeb"
+   ],
+   "committedAt": "2026-11-16T20:55:04-08:00",
+   "evidence": {
+    "merge-record": "sha256:87ea9c3ff557f28932776fe5d6e7f4632de1277aba8e0994d27462f4d1dc075a"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T04:55:05Z",
+   "parents": [
+    "ec44bc80affa5b1c2a61b5e4fb0cf11cdb3a1419",
+    "5932714476d6e39241edc4ce6c62c110a14ebaeb"
+   ],
+   "pr": 44,
+   "result": "pass",
+   "sha": "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d"
+  },
+  {
+   "commits": [
+    "d234846737690bd4ace9ad0efe7a4edd8da59de3",
+    "71c5982159b854a8326b3bcffd2411499fea69ac"
+   ],
+   "committedAt": "2026-11-16T21:05:29-08:00",
+   "evidence": {
+    "merge-record": "sha256:db1dfa14cddcb96d2210a0c6f620e53e569a5f5e0e3126d6fea4d78bad9e879c"
+   },
+   "exception": "bootstrap-pre-go-live",
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bootstrap-pre-go-live"
+   ],
+   "mergedAt": "2026-11-17T05:05:30Z",
+   "parents": [
+    "ec58b9e0cb32b171d14e5a5ad5ada1836650c87d",
+    "d234846737690bd4ace9ad0efe7a4edd8da59de3"
+   ],
+   "pr": 45,
+   "result": "pass",
+   "sha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
+  },
+  {
+   "bypassException": {
+    "approvedAt": "2026-11-17",
+    "approvedBy": "factory-ryan-lauderback",
+    "label": "bypass-exception-1",
+    "pr": 58,
+    "reason": "PM/TL context hidden-files fix; no control-change path yet"
+   },
+   "commits": [
+    "163ca8d50aeb8674409de44149102cee4746632f",
+    "6363230405724d79dd96946084615999a84a9742",
+    "64de54f67e35ceb9a6acc0b65dfe2625f5a67b63"
+   ],
+   "committedAt": "2026-11-17T05:42:24-08:00",
+   "evidence": {
+    "merge-record": "sha256:44e095f15d917083dcc2623bb44800266be572b4a1dfaa0680b57b1454db7871"
+   },
+   "exception": "EXC-2026-11-21-01, EXC-2026-11-21-02, EXC-2026-11-21-03",
+   "gateAsOfMerge": {
+    "failed": [
+     "F5.topology"
+    ],
+    "result": "fail"
+   },
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-1"
+   ],
+   "mergedAt": "2026-11-17T13:42:24Z",
+   "parents": [
+    "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2",
+    "163ca8d50aeb8674409de44149102cee4746632f"
+   ],
+   "pr": 58,
+   "result": "fail",
+   "sha": "fc4dd5de7690d82244f835aaed785add336d23a4"
+  },
+  {
+   "bypassException": {
+    "approvedAt": "2026-11-17",
+    "approvedBy": "factory-ryan-lauderback",
+    "label": "bypass-exception-2",
+    "pr": 60,
+    "reason": "check-run ids exceed 9 digits"
+   },
+   "commits": [
+    "c390738d2342500a3433cc651911d65be3688378",
+    "e945c7a0d7a4b55f37f0357c9ef1d97205c6dab7",
+    "40a56805b0dc0edcc89e4692306ca1dc3ee4c589"
+   ],
+   "committedAt": "2026-11-17T07:14:13-08:00",
+   "evidence": {
+    "merge-record": "sha256:f360e5bac5abeadd8d2b0025bde4552775ea6ea4309775fd9b3ccd934939b7a5"
+   },
+   "exception": "EXC-2026-11-21-04, EXC-2026-11-21-05, EXC-2026-11-21-06",
+   "gateAsOfMerge": {
+    "failed": [
+     "F5.topology"
+    ],
+    "result": "fail"
+   },
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-2"
+   ],
+   "mergedAt": "2026-11-17T15:14:14Z",
+   "parents": [
+    "fc4dd5de7690d82244f835aaed785add336d23a4",
+    "c390738d2342500a3433cc651911d65be3688378"
+   ],
+   "pr": 60,
+   "result": "fail",
+   "sha": "0964c24e0f0218626e819e6f8d328b5d13f3b830"
+  },
+  {
+   "bypassException": {
+    "approvedAt": "2026-11-17",
+    "approvedBy": "factory-ryan-lauderback",
+    "label": "bypass-exception-3",
+    "pr": 62,
+    "reason": "FRQ-13 dry-run contract fixes: manifest story objects, review author id, qa-result subject, unpaired agent runs"
+   },
+   "commits": [
+    "d790cafda5306867a013e8641371e7d3ea5d4870",
+    "1c0b5c0e9d57cc7411c4585d88e399d669021478",
+    "ba86c942c16387393d332190dd04d62da6858999",
+    "cf0ecdfc1421c8674c63ea0442071c6edf83c1e4",
+    "db8c8445d8399361221809cc8c65c30a4ca686f4"
+   ],
+   "committedAt": "2026-11-17T07:56:39-08:00",
+   "evidence": {
+    "merge-record": "sha256:bfac2a0e5d8c4021e041199f0bc8226e67afac074157f718a98b94dd0af48acf"
+   },
+   "exception": "EXC-2026-11-21-07, EXC-2026-11-21-08, EXC-2026-11-21-09",
+   "gateAsOfMerge": {
+    "failed": [
+     "F5.topology"
+    ],
+    "result": "fail"
+   },
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "bypass-exception-3"
+   ],
+   "mergedAt": "2026-11-17T15:56:40Z",
+   "parents": [
+    "0964c24e0f0218626e819e6f8d328b5d13f3b830",
+    "d790cafda5306867a013e8641371e7d3ea5d4870"
+   ],
+   "pr": 62,
+   "result": "fail",
+   "sha": "515187a1ceba42dae732250659f175338c03204e"
+  },
+  {
+   "commits": [
+    "fbfea609ac99cabd1504764f069c8e2858f930b0",
+    "0752fd003e21c81a1a4b87fad99599255af94fab",
+    "621353343952043a6fb4c4dabcad1c43cb862004",
+    "4951c4cf925fd49389593a258f77fd80b88229f3",
+    "cf7699f073d3915d157b46863890635b9de95eae"
+   ],
+   "committedAt": "2026-11-17T20:55:17Z",
+   "evidence": {
+    "merge-record": "sha256:efb909c6f985a30331817b208bbbe9be930bcc904b8cb903912f87d338c828ad"
+   },
+   "exception": null,
+   "gateAsOfMerge": {
+    "failed": [],
+    "result": "pass"
+   },
+   "kind": "main-commit",
+   "labels": [
+    "app-key-exposed-not-rotated",
+    "sod-shortcut-owner-approver"
+   ],
+   "mergedAt": "2026-11-17T20:55:18Z",
+   "parents": [
+    "515187a1ceba42dae732250659f175338c03204e",
+    "fbfea609ac99cabd1504764f069c8e2858f930b0"
+   ],
+   "pr": 61,
+   "result": "pass",
+   "sha": "96f212b0cc9278b25edc5010184d6cae666dcdd6"
+  }
+ ],
+ "schema": "sox/reconciliation-report/v1",
+ "step": "CC-06"
+}
