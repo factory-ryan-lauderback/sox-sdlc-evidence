@@ -134,15 +134,15 @@
  ],
  "checkRuns": {
   "byApp": {
-   "gate": 176,
+   "gate": 185,
    "qa": 6,
    "review": 22
   },
   "commitsScanned": 147,
-  "count": 204,
+  "count": 213,
   "explained": 0,
   "goLiveReady": false,
-  "lastCheckRunId": 136157225648,
+  "lastCheckRunId": 136718958173,
   "paired": 22,
   "success": 23,
   "unexplainedUnpaired": 1,
@@ -150,7 +150,7 @@
    {
     "app": "qa",
     "checkRunId": 134141442425,
-    "exception": "EXC-2026-11-20-11",
+    "exception": "EXC-2026-11-21-11",
     "externalId": "44112362356",
     "headSha": "37d7eb794fc4249e0a36e24545fc75cf25f2085d",
     "labels": [
@@ -167,7 +167,7 @@
  "exceptions": [
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-01",
+   "id": "EXC-2026-11-21-01",
    "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
    "kind": "bypass-exception",
    "labels": [
@@ -178,7 +178,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-02",
+   "id": "EXC-2026-11-21-02",
    "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
    "kind": "merge-record-fail",
    "labels": [
@@ -189,7 +189,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-03",
+   "id": "EXC-2026-11-21-03",
    "item": "commit:fc4dd5de7690d82244f835aaed785add336d23a4",
    "kind": "gate-reperformance-fail",
    "labels": [
@@ -200,7 +200,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-04",
+   "id": "EXC-2026-11-21-04",
    "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
    "kind": "bypass-exception",
    "labels": [
@@ -211,7 +211,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-05",
+   "id": "EXC-2026-11-21-05",
    "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
    "kind": "merge-record-fail",
    "labels": [
@@ -222,7 +222,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-06",
+   "id": "EXC-2026-11-21-06",
    "item": "commit:0964c24e0f0218626e819e6f8d328b5d13f3b830",
    "kind": "gate-reperformance-fail",
    "labels": [
@@ -233,7 +233,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-07",
+   "id": "EXC-2026-11-21-07",
    "item": "commit:515187a1ceba42dae732250659f175338c03204e",
    "kind": "bypass-exception",
    "labels": [
@@ -244,7 +244,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-08",
+   "id": "EXC-2026-11-21-08",
    "item": "commit:515187a1ceba42dae732250659f175338c03204e",
    "kind": "merge-record-fail",
    "labels": [
@@ -255,7 +255,7 @@
   },
   {
    "control": "SDLC-10",
-   "id": "EXC-2026-11-20-09",
+   "id": "EXC-2026-11-21-09",
    "item": "commit:515187a1ceba42dae732250659f175338c03204e",
    "kind": "gate-reperformance-fail",
    "labels": [
@@ -266,7 +266,7 @@
   },
   {
    "control": "CC-07",
-   "id": "EXC-2026-11-20-10",
+   "id": "EXC-2026-11-21-10",
    "item": "app-inventory:44186611573",
    "kind": "app-inventory-stale",
    "labels": [
@@ -276,7 +276,7 @@
   },
   {
    "control": "CC-02",
-   "id": "EXC-2026-11-20-11",
+   "id": "EXC-2026-11-21-11",
    "item": "check-run:134141442425",
    "kind": "check-without-evidence",
    "labels": [
@@ -287,8 +287,6 @@
  ],
  "forgeryAttempts": [
   "sha256:24ed34528967ff052ab55d9a615751c782f00854355f02cd4a01c586c7186145",
-  "sha256:563eea9b042491be38396246d0e8b0b682ec7872980266c7e53f94b9ebde42a5",
-  "sha256:6cf00f0455ff79d1704ef833e5a702a04bffe35fd0ded530fb92f3bd28d38be3",
   "sha256:722e303b8e4d1e4c331156fbf6ccf1de7a3da678bde419dfe3a14b30ce7eb6b7",
   "sha256:77ee63e2831c97d8bc6ba8c590b26f55444d9c73a914ac1a74577d764bd17eca",
   "sha256:adc27b7c154c6aa19be995322b2a790758faaa72317f680d4864b577f5279396"
@@ -299,11 +297,11 @@
   "mainSha": "3aca0fea9e2e5fd2721fccc9dc30942e6d2796f2"
  },
  "highWater": {
-  "lastCheckRunId": 136157225648,
+  "lastCheckRunId": 136718958173,
   "lastPrNumber": 62,
   "mainSha": "96f212b0cc9278b25edc5010184d6cae666dcdd6"
  },
- "id": "2026-11-20T12:03:56Z",
+ "id": "2026-11-21T11:38:34Z",
  "knownExceptions": [
   {
    "kind": "known-exception",
@@ -338,12 +336,12 @@
   "P5 rulesets, ruleset history and rule suites (owner token gets 403; unverified)",
   "P8 checkRunId-to-check-run resolution for every verified predicate"
  ],
- "observedAt": "2026-11-20T12:11:38Z",
+ "observedAt": "2026-11-21T11:45:25Z",
  "openExceptions": 11,
  "outcome": "exceptions",
  "period": {
-  "from": "2026-11-19T04:33:15Z",
-  "to": "2026-11-20T12:03:56Z"
+  "from": "2026-11-20T12:03:56Z",
+  "to": "2026-11-21T11:38:34Z"
  },
  "policyDigest": "sha256:63c43f9178cd97c41fb67a55413db9d3694ac019730c00832c18dacc67be8693",
  "populations": {
@@ -363,14 +361,14 @@
   },
   "P8": {
    "commitsScanned": 147,
-   "count": 204,
+   "count": 213,
    "explained": 0,
    "paired": 22,
    "success": 23,
    "unexplainedUnpaired": 1
   }
  },
- "previousReport": "sha256:9ee65631746df1e19658583f44113559b97eef2078163bc21b4e8e62d07a1caf",
+ "previousReport": "sha256:29ca14589cb41bcaa55a8eda9e217cf1218681437b81350ee5f7c85aa6313b02",
  "reconcilerCodeSha": "96f212b0cc9278b25edc5010184d6cae666dcdd6",
  "repo": "factory-ryan-lauderback/sox-sdlc-sandbox",
  "required_steps": [
@@ -1405,7 +1403,7 @@
    "evidence": {
     "merge-record": "sha256:44e095f15d917083dcc2623bb44800266be572b4a1dfaa0680b57b1454db7871"
    },
-   "exception": "EXC-2026-11-20-01, EXC-2026-11-20-02, EXC-2026-11-20-03",
+   "exception": "EXC-2026-11-21-01, EXC-2026-11-21-02, EXC-2026-11-21-03",
    "gateAsOfMerge": {
     "failed": [
      "F5.topology"
@@ -1443,7 +1441,7 @@
    "evidence": {
     "merge-record": "sha256:f360e5bac5abeadd8d2b0025bde4552775ea6ea4309775fd9b3ccd934939b7a5"
    },
-   "exception": "EXC-2026-11-20-04, EXC-2026-11-20-05, EXC-2026-11-20-06",
+   "exception": "EXC-2026-11-21-04, EXC-2026-11-21-05, EXC-2026-11-21-06",
    "gateAsOfMerge": {
     "failed": [
      "F5.topology"
@@ -1483,7 +1481,7 @@
    "evidence": {
     "merge-record": "sha256:bfac2a0e5d8c4021e041199f0bc8226e67afac074157f718a98b94dd0af48acf"
    },
-   "exception": "EXC-2026-11-20-07, EXC-2026-11-20-08, EXC-2026-11-20-09",
+   "exception": "EXC-2026-11-21-07, EXC-2026-11-21-08, EXC-2026-11-21-09",
    "gateAsOfMerge": {
     "failed": [
      "F5.topology"
